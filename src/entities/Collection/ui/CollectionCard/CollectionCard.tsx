@@ -2,10 +2,10 @@ import { memo } from 'react';
 import cls from './CollectionCard.module.scss';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 import { AppImage } from '@/shared/ui/AppImage';
-import { Avatar } from '@/shared/ui/Avatar';
 import { Stack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text';
 import { type Collection } from '../../model/types';
+import { ArtistTag } from '@/entities/Artist';
 
 interface CollectionCardProps {
   className?: string;
@@ -30,10 +30,7 @@ export const CollectionCard = memo(function CollectionCard(props: CollectionCard
         </Stack>
         <Stack direction="column" gap="10">
           <Text text={collection.name} size="h5" />
-          <Stack gap="10">
-            <Avatar size={24} src={collection.artist !== undefined ? collection.artist.avatar : ''} />
-            <Text text={collection.artist !== undefined ? collection.artist.name : 'name'} />
-          </Stack>
+          <ArtistTag artist={collection.artist} />
         </Stack>
       </Stack>
     </div>

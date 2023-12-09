@@ -2,10 +2,10 @@ import { memo } from 'react';
 import cls from './Text.module.scss';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 
-type TextFontFamily = 'work' | 'space';
-type TextSize = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'base' | 'caption';
-type TextColor = 'white' | 'gray';
-type TextAlign = 'left' | 'center' | 'right';
+export type TextFontFamily = 'work' | 'space';
+export type TextSize = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'base' | 'caption';
+export type TextColor = 'white' | 'gray';
+export type TextAlign = 'left' | 'center' | 'right';
 
 interface TextProps {
   className?: string;

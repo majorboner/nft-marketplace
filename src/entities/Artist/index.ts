@@ -13,3 +13,5 @@ export {
 } from './model/store';
 
 export { ArtistCard } from './ui/ArtistCard/ArtistCard';
+
+export { ArtistTag } from './ui/ArtistTag/ArtistTag';

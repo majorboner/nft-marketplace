@@ -4,8 +4,8 @@ import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 import { AppImage } from '@/shared/ui/AppImage';
 import { Stack } from '@/shared/ui/Stack';
 import { Text } from '@/shared/ui/Text';
-import { Avatar } from '@/shared/ui/Avatar';
 import { type NFT } from '../../model/types';
+import { ArtistTag } from '@/entities/Artist';
 
 interface NFTCardProps {
   className?: string;
@@ -21,10 +21,7 @@ export const NFTCard = memo(function NFTCard(props: NFTCardProps) {
       <Stack direction="column" gap="25" maxWidth className={cls.nftInfo}>
         <Stack direction="column" gap="5" maxWidth>
           <Text text={nft.name} size="h5" />
-          <Stack gap="12">
-            <Avatar src={nft.artist.avatar} size={24} />
-            <Text text={nft.artist.name} family="space" />
-          </Stack>
+          <ArtistTag artist={nft.artist} textFamily="space" />
         </Stack>
         <Stack direction="row" justify="between" maxWidth>
           <Stack direction="column" gap="8">
