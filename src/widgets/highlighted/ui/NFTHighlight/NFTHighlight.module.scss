@@ -1,0 +1,29 @@
+.NFTHighlight {
+  overflow: hidden;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  top: -50%;
+  z-index: 0;
+}
+
+.content {
+  z-index: 1;
+  padding: 360px 0 60px;
+  background: linear-gradient(180deg, rgba(162 89 255 / 0%) 0%, #a259ff 100%);
+}
+
+.info {
+  max-width: 755px;
+  width: 100%;
+}
+
+.tag {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background: var(--bg-secondary-color);
+}

@@ -2,7 +2,7 @@ import { createEffect, createEvent, createStore, sample } from 'effector';
 import { getNftById } from './services';
 import { type NFT } from './types';
 
-const defaultState: NFT = {
+export const nftDefaultState: NFT = {
   artist: {
     avatar: '',
     createdNfts: [],
@@ -50,6 +50,6 @@ sample({
   target: getSomeNftsFx,
 });
 
-export const $nft = createStore<NFT>(defaultState).on(getNftByIdFx.doneData, (_, payload) => payload);
+export const $nft = createStore<NFT>(nftDefaultState).on(getNftByIdFx.doneData, (_, payload) => payload);
 
 export const $someNfts = createStore<NFT[]>([]).on(getSomeNftsFx.doneData, (state, params) => state.concat(params));
