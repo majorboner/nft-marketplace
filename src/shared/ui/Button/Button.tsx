@@ -3,7 +3,7 @@ import cls from './Button.module.scss';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 
 export type ButtonSize = 'primary' | 'secondary' | 'tertiary';
-export type ButtonVariant = 'filled' | 'outlined';
+export type ButtonVariant = 'filled' | 'outlined' | 'filledWhite';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
