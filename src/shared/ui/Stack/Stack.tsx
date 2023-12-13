@@ -1,4 +1,4 @@
-import { memo, type ReactNode } from 'react';
+import { type DetailedHTMLProps, type HTMLAttributes, memo, type ReactNode } from 'react';
 import cls from './Stack.module.scss';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 
@@ -7,7 +7,9 @@ type StackGap = '0' | '5' | '8' | '10' | '12' | '15' | '20' | '25' | '30' | '40'
 type StackAlignItems = 'start' | 'center' | 'end' | 'stretch' | 'baseline';
 type StackJustifyContent = 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';
 
-interface StackProps {
+type DivProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+
+interface StackProps extends DivProps {
   className?: string;
   gap?: StackGap;
   direction?: StackDirection;
