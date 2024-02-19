@@ -3,7 +3,7 @@ import cls from './Stack.module.scss';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 
 type StackDirection = 'row' | 'column';
-type StackGap = '0' | '5' | '8' | '10' | '12' | '15' | '20' | '25' | '30' | '40' | '50';
+type StackGap = '0' | '5' | '8' | '10' | '12' | '15' | '20' | '25' | '30' | '40' | '50' | '80';
 type StackAlignItems = 'start' | 'center' | 'end' | 'stretch' | 'baseline';
 type StackJustifyContent = 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly';
 
@@ -31,6 +31,7 @@ const gapMapper: Record<StackGap, string> = {
   '30': cls.gap30,
   '40': cls.gap40,
   '50': cls.gap50,
+  '80': cls.gap80,
 };
 
 const alignMapper: Record<StackAlignItems, string> = {
