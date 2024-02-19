@@ -1,0 +1,29 @@
+.InfoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 30px 30px;
+  background: var(--bg-secondary-color);
+  border-radius: 20px;
+}
+
+.image {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+}
+
+.details {
+  * {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.heading {
+  font: var(--font-work-h5);
+}
+
+.description {
+  font: var(--font-work-base);
+}
