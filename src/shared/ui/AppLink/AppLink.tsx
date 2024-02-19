@@ -2,11 +2,10 @@ import { type ReactNode, memo } from 'react';
 import cls from './AppLink.module.scss';
 import { classNames } from '@/shared/lib/helpers/classNames/classNames';
 import { Link } from 'atomic-router-react';
-import { type RouteInstance, type RouteParams } from 'atomic-router';
 
-interface AppLinkProps extends ReturnType<typeof Link> {
+interface AppLinkProps{
   className?: string;
-  to: string | RouteInstance<RouteParams>;
+  to: string;
   children: ReactNode;
 }
 

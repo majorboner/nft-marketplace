@@ -9,6 +9,7 @@ import { MoreNfts } from '@/widgets/discover';
 import { NFTHighlight } from '@/widgets/highlighted';
 import { HowItWorks } from '@/widgets/info';
 import { SubscribeWidget } from '@/widgets/subscribe';
+import { Footer } from '@/widgets/footer';
 
 interface MainPageProps {
   className?: string;
@@ -26,6 +27,7 @@ export const MainPage = memo(function MainPage(props: MainPageProps) {
       <NFTHighlight />
       <HowItWorks />
       <SubscribeWidget />
+      <Footer />
     </div>
   );
 });
