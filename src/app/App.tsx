@@ -4,6 +4,7 @@ import { Pages } from '@/pages';
 import { router } from '@/shared/routing';
 import { NavBar } from '@/widgets/navigation';
 import { Stack } from '@/shared/ui/Stack';
+import { Footer } from '@/widgets/footer';
 
 export const App = (): ReactNode => {
   return (
@@ -11,6 +12,7 @@ export const App = (): ReactNode => {
       <Stack maxWidth direction="column" justify="center" align="center">
         <NavBar className="navbar" />
         <Pages />
+        <Footer />
       </Stack>
     </RouterProvider>
   );
