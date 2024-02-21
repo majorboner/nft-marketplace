@@ -17,3 +17,5 @@ export { ArtistCard } from './ui/ArtistCard/ArtistCard';
 export { ArtistTag } from './ui/ArtistTag/ArtistTag';
 
 export { ArtistAvatar } from './ui/ArtistAvatar/ArtistAvatar';
+
+export {ArtistBanner} from './ui/ArtistBanner/ArtistBanner';
