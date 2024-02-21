@@ -1,6 +1,6 @@
 import { useId, type ReactNode, useState, type ChangeEvent } from "react";
 import { Button } from "../Button";
-import LetterIcon from "../../assets/icons/EnvelopeSimple.svg";
+import LetterIcon from "../../assets/icons/letter.svg?react";
 import { classNames } from "@/shared/lib/helpers/classNames/classNames";
 import cls from "./SubscribeForm.module.scss";
 

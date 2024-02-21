@@ -1,30 +1,39 @@
-import { memo, useEffect } from 'react';
-import cls from './NFTHighlight.module.scss';
-import { classNames } from '@/shared/lib/helpers/classNames/classNames';
-import { Stack } from '@/shared/ui/Stack';
-import { Timer } from '@/shared/ui/Timer';
-import { ArtistTag } from '@/entities/Artist';
-import { Text } from '@/shared/ui/Text';
-import { Button } from '@/shared/ui/Button';
-import EyeIcon from '@/shared/assets/icons/Eye.svg';
-import { $highlightedNft, getHighlightedNftByIdFx, loadHighlightedNft } from '../../model/store';
-import { useUnit } from 'effector-react';
-import { AppImage } from '@/shared/ui/AppImage';
+import { memo, useEffect } from "react";
+import cls from "./NFTHighlight.module.scss";
+import { classNames } from "@/shared/lib/helpers/classNames/classNames";
+import { Stack } from "@/shared/ui/Stack";
+import { Timer } from "@/shared/ui/Timer";
+import { ArtistTag } from "@/entities/Artist";
+import { Text } from "@/shared/ui/Text";
+import { Button } from "@/shared/ui/Button";
+import EyeIcon from "@/shared/assets/icons/eye-x.svg?react";
+import {
+  $highlightedNft,
+  getHighlightedNftByIdFx,
+  loadHighlightedNft,
+} from "../../model/store";
+import { useUnit } from "effector-react";
+import { AppImage } from "@/shared/ui/AppImage";
 
 interface NFTHighlightProps {
   className?: string;
 }
 
-export const NFTHighlight = memo(function NFTHighlight(props: NFTHighlightProps) {
+export const NFTHighlight = memo(function NFTHighlight(
+  props: NFTHighlightProps
+) {
   const { className } = props;
-  const [highlightedNft, isLoading] = useUnit([$highlightedNft, getHighlightedNftByIdFx.pending]);
+  const [highlightedNft, isLoading] = useUnit([
+    $highlightedNft,
+    getHighlightedNftByIdFx.pending,
+  ]);
 
   useEffect(() => {
     loadHighlightedNft(1);
   }, []);
 
   if (isLoading) {
-    return 'loading...';
+    return "loading...";
   }
 
   return (

@@ -1,19 +1,25 @@
-import { memo, useEffect } from 'react';
-import cls from './TopRatedArtits.module.scss';
-import { classNames } from '@/shared/lib/helpers/classNames/classNames';
-import { Stack } from '@/shared/ui/Stack';
-import { Text } from '@/shared/ui/Text';
-import { Button } from '@/shared/ui/Button';
-import RocketLaunchIcon from '@/shared/assets/icons/RocketLaunch.svg';
-import { ArtistCard } from '@/entities/Artist/ui/ArtistCard/ArtistCard';
-import { useUnit } from 'effector-react';
-import { $topArtists, getTopArtistsFx, loadTopArtistsTriggered } from '@/entities/Artist/model/store';
+import { memo, useEffect } from "react";
+import cls from "./TopRatedArtits.module.scss";
+import { classNames } from "@/shared/lib/helpers/classNames/classNames";
+import { Stack } from "@/shared/ui/Stack";
+import { Text } from "@/shared/ui/Text";
+import { Button } from "@/shared/ui/Button";
+import RocketLaunchIcon from "@/shared/assets/icons/rocket-launch.svg?react";
+import { ArtistCard } from "@/entities/Artist/ui/ArtistCard/ArtistCard";
+import { useUnit } from "effector-react";
+import {
+  $topArtists,
+  getTopArtistsFx,
+  loadTopArtistsTriggered,
+} from "@/entities/Artist/model/store";
 
 interface TopRatedArtitsProps {
   className?: string;
 }
 
-export const TopRatedArtits = memo(function TopRatedArtits(props: TopRatedArtitsProps) {
+export const TopRatedArtits = memo(function TopRatedArtits(
+  props: TopRatedArtitsProps
+) {
   const { className } = props;
   const [artists, isLoading] = useUnit([$topArtists, getTopArtistsFx.pending]);
   useEffect(() => {
@@ -21,11 +27,16 @@ export const TopRatedArtits = memo(function TopRatedArtits(props: TopRatedArtits
   }, []);
 
   if (isLoading) {
-    return 'loading...';
+    return "loading...";
   }
 
   return (
-    <Stack direction="column" gap="50" maxWidth className={classNames(cls.TopRatedArtits, {}, [className])}>
+    <Stack
+      direction="column"
+      gap="50"
+      maxWidth
+      className={classNames(cls.TopRatedArtits, {}, [className])}
+    >
       <Stack maxWidth justify="between">
         <Stack direction="column" gap="10">
           <Text text="Top creators" size="h3" />

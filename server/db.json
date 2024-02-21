@@ -327,13 +327,13 @@
       "id": "4",
       "name": "Photography",
       "img": "https://s3-alpha-sig.figma.com/img/121c/dda3/402804d9f103b0d623fd05724eb36ad4?Expires=1702857600&Signature=e-X2hMUWAbA37nrasm6gsH56neJ6dt-eIYvtEG5NfVn53L20hIoljvvMomIsUUjRWPmeOmD3sSbo3Ui7oAsPPjKloZbZj6S53ckak6hDtgh02v3B~9H3Bo3dorcVEk5GzGAG71qdjNV56o6Efk0ornM~jYGJx0U8eURgjHncriM0lp-CEubgjs8KxjUuQvzS6AqqqfmFeVn-L4uvGWXWLTJJrSphAU3aX8E7PgYXAyKQt8Md9qClIQtvMPYxk2UVCZCO~lYBO58bE10-lFTT0iIijovFIUzb7GqZ-bVmoRYjIY~3CbN5aHiiUk4vMNv91veBEA54UCv3WpFigqb1mg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "icon": "https://www.svgrepo.com/show/533059/camera.svg"
+      "icon": "https://www.svgrepo.com/show/533059/camera-photo.svg"
     },
     {
       "id": "5",
       "name": "Video",
       "img": "https://s3-alpha-sig.figma.com/img/d708/098d/95de438163a608988f293d376aed4b32?Expires=1702857600&Signature=Spl-OHDqCs5VO-OvhBNmrWVRcVxwnyUa0HX~Y~e5nigfDKEUgR6~YTCA9OBclNHRKg87XvwJE2iKEG3Tuo2GXYL9gQsSpOtwzbsB8FJro8Hbgl6~BN5Xkm~GC~oHP-O6QLHgsYIctRSDmD-lLXlkZWgDl~hmdq3LKmOGJECa~xvtSUAPfb~sWw4nYulEtlCHxpiRC-CIAHwsizWDlkWpT5Ro3eqKRFXLZR3fsHlsBLvLQZMBokjqrTzHFD3cGLG7A7SBqD5QF1IL7QS7yTQwzKVIV6Q4Wi~8Kcui8TszGIJTtA69RbuShljzTkJHisuZWIYicjIAMQ7ynfgEHmB9pw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-      "icon": "https://www.svgrepo.com/show/500738/video-camera.svg"
+      "icon": "https://www.svgrepo.com/show/500738/video-camera-photo.svg"
     },
     {
       "id": "6",

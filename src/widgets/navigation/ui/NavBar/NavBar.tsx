@@ -6,7 +6,7 @@ import { aboutRoute } from "@/pages/about";
 import { mainRoute } from "@/pages/main";
 import { Stack } from "@/shared/ui/Stack/Stack";
 import { Button } from "@/shared/ui/Button";
-import UserIcon from "@/shared/assets/icons/User.svg";
+import UserIcon from "@/shared/assets/icons/user-x.svg?react";
 import { AppLogo } from "@/shared/ui/AppLogo";
 import { registerRoute } from "@/pages/register";
 

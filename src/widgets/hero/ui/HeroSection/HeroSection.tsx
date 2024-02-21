@@ -1,12 +1,12 @@
-import { memo } from 'react';
-import cls from './HeroSection.module.scss';
-import { classNames } from '@/shared/lib/helpers/classNames/classNames';
-import { Stack } from '@/shared/ui/Stack';
-import { Text } from '@/shared/ui/Text';
-import { Button } from '@/shared/ui/Button';
-import RocketLaunchIcon from '@/shared/assets/icons/RocketLaunch.svg';
-import { HighlightedNFT } from '@/entities/NFT/ui/HighlightedNFT/HighlightedNFT';
-import { Info } from '@/shared/ui/Info';
+import { memo } from "react";
+import cls from "./HeroSection.module.scss";
+import { classNames } from "@/shared/lib/helpers/classNames/classNames";
+import { Stack } from "@/shared/ui/Stack";
+import { Text } from "@/shared/ui/Text";
+import { Button } from "@/shared/ui/Button";
+import RocketLaunchIcon from "@/shared/assets/icons/rocket-launch.svg?react";
+import { HighlightedNFT } from "@/entities/NFT/ui/HighlightedNFT/HighlightedNFT";
+import { Info } from "@/shared/ui/Info";
 
 interface HeroSectionProps {
   className?: string;

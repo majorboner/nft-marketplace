@@ -2,9 +2,9 @@ import { Button } from "@/shared/ui/Button";
 import { Input } from "@/shared/ui/Input";
 import { Stack } from "@/shared/ui/Stack";
 import { type ReactNode } from "react";
-import UserIcon from "@/shared/assets/icons/User.svg";
-import LetterIcon from "@/shared/assets/icons/EnvelopeSimple.svg";
-import LockIcon from "@/shared/assets/icons/LockKey.svg";
+import UserIcon from "@/shared/assets/icons/user-x.svg?react";
+import LetterIcon from "@/shared/assets/icons/letter.svg?react";
+import LockIcon from "@/shared/assets/icons/lock-key.svg?react";
 import { Icon } from "@/shared/ui/Icon";
 
 export const CreateAccountForm = (): ReactNode => {
