@@ -8,7 +8,8 @@
     "build:dev": "webpack",
     "start": "webpack serve --open",
     "start:server": "node ./server/app.js",
-    "start:dev": "concurrently \"node ./server/app.js\" \"webpack serve --open\" "
+    "start:dev": "concurrently \"node ./server/app.js\" \"webpack serve --open\" ",
+    "start:dev:vite": "concurrently \"node ./server/app.js\" \"vite\" "
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "@types/webpack": "^5.28.5",
     "@types/webpack-bundle-analyzer": "^4.7.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "concurrently": "^8.2.2",
     "css-loader": "^6.10.0",
     "effector-logger": "^0.15.0",
@@ -47,6 +49,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "typescript-plugin-css-modules": "^5.1.0",
+    "vite": "^5.1.4",
+    "vite-plugin-svgr": "^4.2.0",
     "webpack": "^5.90.2",
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",

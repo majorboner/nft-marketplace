@@ -5,11 +5,16 @@ declare module '*.scss' {
 }
 
 declare module '*.svg' {
-  const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-  export default content;
+  import type * as React from 'react'
+
+  const ReactComponent: React.FunctionComponent<
+    React.ComponentProps<'svg'> & { title?: string }
+  >
+  export default ReactComponent
 }
 
+
 declare module '*.png' {
-  const value: any;
+  const value: unknown;
   export = value;
 }

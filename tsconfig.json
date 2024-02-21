@@ -10,37 +10,43 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
 
-    // language and enviroment
-    "lib": ["DOM", "ESNext"],
-    "target": "ESNext",
+    /* language and enviroment */
+    "lib": ["DOM", "ES2020", "DOM.Iterable"],
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "jsx": "react-jsx",
 
-    // modules
+    /* modules */
+    "allowImportingTsExtensions": true,
     "baseUrl": "./",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "types": ["node"],
     "paths": {
       "@/*": ["./src/*"]
     },
+    "resolveJsonModule": true,
 
-    // emit
+    /* emit */
+    "noEmit": false,
     "preserveConstEnums": true,
     "sourceMap": true,
     "outDir": "dist",
 
-    // editor support
+    /* editor support */
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
 
-    // interop constraints
+    /* interop constraints */
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "isolatedModules": true,
 
-    // language and enviroment
-    "jsx": "react-jsx"
+    /* Completeness */
+    "skipLibCheck": true,
   },
   "ts-node": {
     "compilerOptions": {
@@ -48,5 +54,7 @@
     }
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": []
+  "exclude": [],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "types": ["vite-plugin-svgr/client"]
 }
