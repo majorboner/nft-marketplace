@@ -32,7 +32,7 @@
     "resolveJsonModule": true,
 
     /* emit */
-    "noEmit": false,
+    "noEmit": true,
     "preserveConstEnums": true,
     "sourceMap": true,
     "outDir": "dist",
