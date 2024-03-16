@@ -12,7 +12,7 @@ export const ArtistAvatar = (props: ArtistAvatarProps): ReactNode => {
   const { src, className } = props;
   return (
     <div className={classNames(cls.ArtistAvatar, {}, [className])}>
-      <AppImage src={src} />
+      <AppImage src={src} className={cls.image} />
     </div>
   );
 };
